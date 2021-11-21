@@ -1,0 +1,71 @@
+MINI Project
+
+DBMS .. web Tech
+DBMS
+PROJECT
+
+15
+
+
+
+PL SQL
+Procedure
+Function
+Trigger
+Cursor
+
+
+SQL - Data Types
+SQL - Operators
+SQL - Expressions
+SQL - Create Database 
+SQL - Drop Database
+SQL - Select Database
+SQL - Create Table 
+SQL - Drop Table
+SQL - Insert Query 
+SQL - Select Query
+SQL - Where Clause  VARIETY
+SQL - AND & OR Clauses
+SQL - Update Query
+SQL - Delete Query
+SQL - Like Clause
+SQL - Order By
+SQL - Group By
+SQL - Distinct Keyword
+Advanced SQL
+SQL - Constraints
+SQL - Using Joins
+SQL - Unions Clause
+SQL - NULL Values
+SQL - Alias Syntax
+SQL - Indexes
+SQL - Alter Command
+SQL - Truncate Table
+SQL - Using Views
+SQL - Having Clause
+SQL - Date Functions
+SQL - Sub Queries
+
+
+
+when to use what
+QUERY OPTIMISATION
+
+
+
+RESULT
+
+
+MS EXECUTE... OPTIMISED
+
+practice from your side
+problem ... solution
+group by
+
+
+emp... bank... practice 
+
+29
+15
+

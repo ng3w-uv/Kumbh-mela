@@ -1,0 +1,75 @@
+0.1) Pilgrim Table
+ -- Pilgrim_id 
+ -- adhar 
+ -- address 
+ -- no.of travellers along 
+ -- rtpcr test
+ -- any health condition (special requirements)varchar
+ -- along with travellers ( number of travellers you are with) -- this is a count
+
+0.2) taveller_along_table
+ -- Main_pil (fr key ref from pil table )
+ -- trav_id
+ -- adhar 
+ -- address  
+ -- rtpcr test
+ -- any health condition (special requirements)varchar
+
+0.3) Admin
+ -- admin_id
+ -- superviser
+ -- main_task ( varchar )
+
+0.4) Slot
+ -- Time
+ -- Date
+
+0.5) Ghat
+ -- Ghat_id
+ -- Max_Occupancy
+ -- type
+ -- Curr_avail
+
+0.6) Security
+ -- security_id
+ -- name
+ -- task
+ -- ghat_assigned ( fr key ref from Ghat)
+
+2) Tables needed to create
+2.1 Items list
+ -- item_id
+ -- item_name
+ -- item_price
+ -- item_availability 
+
+2.1 Pilgrim order
+ -- Order_id 
+ -- Pil_id (fr key ref from pilgrim)
+ -- item_id (fr key ref from item list)
+ -- item_count
+ -- order_date ( # to implement a function where orders can only be processed before the main kumbh function)
+
+2.1 Order_List
+ -- order_id
+ -- total_amt
+
+ ## >-> total amount function where it would return the total amount needed to pay by the pil_id (derived attribute)
+
+2.2) -- handling donations
+2.2 Donation/sponsor table
+ -- Donation_id (primary)
+ -- pilgrim_id ( fr key ref from pil_table)
+ -- message
+ -- date
+ -- amt
+ -- payment_mode (CASH/DBT/UPI/DD)
+ 
+2.3) Services | Expenditure | trustee
+2.3 Services >-> #display a chart displaying total donations/sponsor/orders
+ -- services_id
+ -- task
+ -- no. of workers
+ -- req_amt
+
+2.4) earnings #>-> display total earning from - orders - donation/sponsor - central gov - state gov

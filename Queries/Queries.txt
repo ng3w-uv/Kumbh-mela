@@ -1,0 +1,25 @@
+SELECT a.* , b.*, c.*
+	from slot_ghat a
+    	LEFT JOIN slot_list b ON a.slot_id = b.slot_id
+        LEFT JOIN ghat_list c ON a.ghat_id = c.ghat_no
+    WHERE a.ghat_id = 1;
+
+CREATE TRIGGER `after_insert_update_curr_capacity` AFTER INSERT ON `receipts_list` FOR EACH ROW UPDATE ghat_list SET curr_capacity = curr_capacity - new.no_of_pligrim WHERE ghat_no = ( SELECT ghat_id FROM slot_ghat where slot_ghat.id = new.slot_ghat_id );
+
+SELECT * FROM ghat_list 
+	WHERE ghat_list.ghat_no = (
+        							SELECT slot_ghat.ghat_id FROM slot_ghat 
+        									WHERE slot_ghat.ghat_id = 2 LIMIT 1
+                                );
+SELECT * FROM slot_ghat
+	WHERE slot_ghat.ghat_id  IN (
+        							SELECT ghat_list.ghat_no FROM ghat_list 
+        									WHERE ghat_list.ghat_no=4
+                                );
+
+SELECT a.id, b.slot_time , c.ghat_no
+	FROM slot_ghat a
+   INNER JOIN slot_list b ON b.slot_id = a.slot_id
+   INNER JOIN ghat_list c ON c.ghat_no = a.ghat_id
+   ORDER BY c.ghat_no
+   ;

@@ -1,0 +1,55 @@
+Har Har Gange!!
+
+GRP 10_Kumbh Mela Management System
+PC_45 Jerome Wilson        ERP Number. 1032191443
+PC_48 Yuvraj Singh Chauhan ERP Number. 1032191621
+PC_49 Naveen Maheshwari    ERP Number. 1032191975
+PC_61 Himanshu Chaudhari   ERP Number. 1032201583
+
+CRUD 
+1. Insert
+	1.1 Insert a new user 
+	1.2 Book a slot
+	1.3 Insert a new item
+        1.4 Insert a new ghat/slot
+
+2. Update
+	2.1 Update User profile
+	2.2 Update user password
+	2.3 Update Items
+	2.4 Update slots/ghat
+
+3. Delete 
+	3.1 Delete Item
+	3.2 Delete slot ghat/slot
+
+Expecting Reqs.
+1. Triggers
+	1.1 Created a trigger where the current capacity of the selected ghat gets updated after the user books a slot.
+	1.2 Created a trigger where the current availability of the items bought by the user gets updated
+2. Advanced queries
+	Join:-  To join slot and ghat list and display required info
+		To join piligrim, order and items list and display the order history.
+		To join donation and piligrim and display the list of piligrim who have donated.
+3. Authentication using Javascript 
+4. Javascript cookies used to cache data
+
+Improvements:
+ 	1. Improve the UI to make it more user friendly
+ 	2. An all women group would be assigned a pink ghat 
+ 	3. More improved security when the pilgrim registers
+
+
+Future Scope : 
+	1. Implementing Ml model for understanding and make necessary preparations for the kumbh Mela
+	2. Introducing a find me feature which would be using computer vision and AI. This feature would help us to eradicate the problem of people missing in the kumbh mela
+	   provide extra security and keep a check on the crowd since all virtual tracking would be updated to the google maps.
+	3. installing some RFID sensors so that whenever people try to throw something in the river its proof would get recorded and would be fined
+	(Please refer to report for further elaboration)
+
+
+Self Assessment	
+1.Jerome Wilson 18
+2.Naveen Maheshwari 18
+3.Yuvraj Chauhan 18
+4.Himanshu Chaudhari 18

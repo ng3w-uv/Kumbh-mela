@@ -1,0 +1,54 @@
+1)implement all tables
+2)objectives
+2.1 - Only Ordering(List)
+2.2 - Donation
+2.3 - Services - Expenditure (Trustee)
+2.4 - Earnings (kumbh/other) #ordering closed 8 days before kumbh
+
+Item_list
+item_id     item_name        item_price    item_avail
+1             gangajal         90             8
+2             mithai           80             3
+3             kaju             70             1
+#basic function to continue to update item_avail by using count from pil_order
+
+pil_order
+order_id.    pil.   item.  count.    date.*  
+   12        123.    1      3              
+   12        123.    3      2       
+   13        124     1      2      
+   14        124     7      2       
+#just a basic trigger on date ( before a particular date )
+# trigger for out of stock(using item_avail)
+
+order list
+order_id     tot_amt
+   12          900
+   13          79
+
+
+Donation table
+Don_id     pil     amt.        message*      date*   payment_mode*
+  1        123     500000        
+  2        124     750000
+  3        123     10000000                            
+#--> if donation amount is above 1l then he gets a special mention
+
+Admin
+ad_id     sup       main_task(varchar)
+1         NULL         main sup
+2          1           handling orders
+3          1           handling security 
+
+Services
+Service_id     task      no.of workers       req_amt
+    1         cleaning       50               2000
+    2         cooking        23
+    3         security       12
+    4         ghat_rent      10
+    5        washroo_rent    25
+
+if [[ total(services) < total fund (which comprises of donation + total of orders) ]] then trigger >-> ask for more donations
+
+else >-> donate extra money to gov child education scheme
+
